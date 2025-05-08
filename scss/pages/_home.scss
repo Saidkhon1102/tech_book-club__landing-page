@@ -1,0 +1,108 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; 
+    padding: 20px;
+}
+
+.section:last-child {
+    margin-bottom: 0; 
+    margin-top: 120px;
+}
+
+.image-content {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #1a2e44;
+}
+
+
+
+.text-content ul {
+    list-style: none;
+}
+
+.text-content ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #385159;
+}
+
+.text-content p {
+    font-size: 20px;
+    color: #385159;
+}
+.oval-shape{
+    background-image: url(../pattern-circle.png);
+}
+
+
+@media screen and (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .image-content, .text-content {
+        width: 100%;
+    }
+
+    .image-content {
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+
+    .text-content h1 {
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    .text-content h1 {
+        font-size: 34px;
+    }
+
+    .text-content p {
+        font-size: 20px;
+    }
+
+    .image-content {
+        margin-bottom: 15px;
+    }
+}
